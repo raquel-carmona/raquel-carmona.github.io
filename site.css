@@ -6,7 +6,7 @@ body {
 
 .ui.text.container {
   font-family: "Times New Roman";
-  font: "Times New Roman";
+  max-width: 1024px;
 }
 
 

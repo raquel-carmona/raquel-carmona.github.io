@@ -26,25 +26,46 @@
     <!-- MENU -->
     <div class="ui borderless main menu">
         <div class="ui text container">
-            <a href="index.html">
             <div class="header item">
-              Raquel Carmona
+                <a href="index.html">Raquel Carmona</a>
             </div>
-            </a>
-            <a href="proyectos.html" class="item">Proyectos</a>
-            <a href="sobre_mi.html" class="item">Sobre mi</a>
-            <a href="contacto.html" class="item">Contacto</a>
+            <div class="right menu">
+                <div class="item">
+                    <a href="proyectos.html" class="item">Proyectos</a>
+                </div>
+                <div class="item">
+                    <a href="sobre_mi.html" class="item">Sobre mi</a>
+                </div>
+                <div class="item">
+                    <a href="contacto.html" class="item">Contacto</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- BODY -->
     <div class="ui text container">
+        <img class="ui centered large raquel image" src="images/r1.png" alt="Fotografía de Raquel Carmona">
+        <div class="ui fade reveal">
+            <div class="visible content">
+                <img src="/images/r1.png" class="ui large centered raquel image">
+            </div>
+            <div class="hidden content">
+                <p>Hola!</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        $('.raquel.image')
+             .transition('scale', '50ms')
+             .transition('scale', '5000ms') ; 
+     </script>
+ 
 
     <!-- FOOTER -->
     <div class="ui vertical footer segment">
-        <div class="ui grid">
+        <div class="ui text container grid">
             <div class="ten wide column">
                 <div class="ui rigth aligned basic segment">
                     Raquel Carmona <i class="copyright icon"></i> All rights reserved.

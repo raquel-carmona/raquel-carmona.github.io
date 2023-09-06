@@ -18,7 +18,6 @@
 
     <link rel="stylesheet" type="text/css" href="site.css">
     <script src="site.js"></script>
-
 </head>
 
 <body>
@@ -45,15 +44,57 @@
 
     <!-- BODY -->
     <div class="ui text container">
-        <img class="ui centered large raquel image" src="images/r1.png" alt="Fotografía de Raquel Carmona">
+        <div class="ui segment">
+            <h3 class="ui floated header">Contacto</h3>
+            <div class="ui clearing divider"></div>
+            <div class="ui two column very relaxed grid">
+            <div class="column">
+                <p>
+                    Siéntete libre de hablar conmigo de cualquier cosa. 
+                </p>
+                <p>
+                    ¡No dudes en saludar!
+                </p>
+                <p>
+                    Puedes encontrarme en redes sociales o enviarme un mensaje a mi email rellenando el siguiente formulario.
+                </p>
+                <div align="center">
+                    <a href="https://www.behance.net/raquelcrmona">
+                        <button class="ui circular black icon button">
+                            <i class="behance icon"></i>
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/raquelcrmona/">
+                        <button class="ui circular instagram icon button">
+                            <i class="instagram icon"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="column">
+                <form class="ui form">
+                    <div class="field">
+                        <label>Nombre</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <div class="field">
+                        <label>email</label>
+                        <input type="text" name="email" />
+                    </div>
+                    <div class="field">
+                        <label>Mensaje</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <button class="ui button" type="submit">Submit</button>
+                </form>
+                <div align="center">
+                    <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script>
-        $('.raquel.image')
-             .transition('scale', '50ms')
-             .transition('scale', '5000ms') ; 
-     </script>
- 
+
     <!-- FOOTER -->
     <div class="ui vertical footer segment">
         <div class="ui text container grid">
