@@ -16,9 +16,34 @@
 
     <title>Raquel Carmona</title>
 
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="osite.css">
     <script src="site.js"></script>
 
+
+
+    <style>
+    .m2 {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 780px) {
+        .m1 {
+          display: none !important;
+        }
+
+        .m2 {
+            display: block !important;
+        }
+      }
+    </style>
+  
+    <script>
+        $('.m3')
+            .popup({
+                inline: true
+            })
+;
+    </script>
 </head>
 
 <body>
@@ -29,16 +54,73 @@
             <div class="header item">
                 <a href="index.html">Raquel Carmona</a>
             </div>
+            
             <div class="right menu">
-                <div class="item">
+                <div class="m1 item">
                     <a href="proyectos.html" class="item">Proyectos</a>
                 </div>
-                <div class="item">
+                <div class="m1 item">
                     <a href="sobre_mi.html" class="item">Sobre mi</a>
                 </div>
-                <div class="item">
+                <div class="m1 item">
                     <a href="contacto.html" class="item">Contacto</a>
                 </div>
+
+                <div class="ui m3 menu">
+                    <a class="browse item">
+                      Browse
+                      <i class="dropdown icon"></i>
+                    </a>
+                  </div>
+                  <div class="ui fluid popup bottom rigth transition hidden">
+                    <div class="ui four column relaxed equal height divided grid">
+                      <div class="column">
+                        <h4 class="ui header">Fabrics</h4>
+                        <div class="ui link list">
+                          <a class="item">Cashmere</a>
+                          <a class="item">Linen</a>
+                          <a class="item">Cotton</a>
+                          <a class="item">Viscose</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <h4 class="ui header">Size</h4>
+                        <div class="ui link list">
+                          <a class="item">Small</a>
+                          <a class="item">Medium</a>
+                          <a class="item">Large</a>
+                          <a class="item">Plus Sizes</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <h4 class="ui header">Colored</h4>
+                        <div class="ui link list">
+                          <a class="item">Neutrals</a>
+                          <a class="item">Brights</a>
+                          <a class="item">Pastels</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <h4 class="ui header">Types</h4>
+                        <div class="ui link list">
+                          <a class="item">Knitwear</a>
+                          <a class="item">Outerwear</a>
+                          <a class="item">Pants</a>
+                          <a class="item">Shoes</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="m2 ui simple dropdown item">
+                    <i class="m2 bars icon"></i>
+                    <div class="m2 menu">
+                        <a href="proyectos.html" class="item">Proyectos</a> 
+                        <a href="sobre_mi.html" class="item">Sobre mi</a>
+                        <a href="contacto.html" class="item">Contacto</a>
+                    </div>
+                  </div>
+                </a>
             </div>
         </div>
     </div>
@@ -46,14 +128,6 @@
     <!-- BODY -->
     <div class="ui text container">
         <img class="ui centered large raquel image" src="images/r1.png" alt="Fotografía de Raquel Carmona">
-        <div class="ui fade reveal">
-            <div class="visible content">
-                <img src="/images/r1.png" class="ui large centered raquel image">
-            </div>
-            <div class="hidden content">
-                <p>Hola!</p>
-            </div>
-        </div>
     </div>
 
     <script>
@@ -66,18 +140,9 @@
     <!-- FOOTER -->
     <div class="ui vertical footer segment">
         <div class="ui text container grid">
-            <div class="ten wide column">
                 <div class="ui rigth aligned basic segment">
                     Raquel Carmona <i class="copyright icon"></i> All rights reserved.
                 </div>
-            </div>
-            <div class="six wide column">
-                <div class="ui right aligned basic segment">
-                    <div class="ui horizontal small divided link list">
-                        <a class="item" href="index_en.html">(<i class="gb flag"></i> English)</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
