@@ -1,0 +1,27 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Short description (displayed in the header)
+description: Raquel Carmona personal site
+
+collections:
+  projects:
+    output: true
+
+menu:
+  - name: Projects
+    url: /projects
+
+  - name: About me
+    url: /aboutme
+
+  - name: Contact
+    url: /contact
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

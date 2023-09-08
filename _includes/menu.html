@@ -1,0 +1,27 @@
+<div class="ui borderless main menu">
+    <div class="ui text container">
+        <div class="header item">
+            <a href="/index.html">Raquel Carmona</a>
+        </div>
+        
+        <div class="right menu">
+            {% for m in site.menu %}
+                <div class="m1 item">
+                    <a href="{{ m.url }}" class="item">{{ m.name }}</a>
+                </div>
+            {% endfor %}
+            
+            <div class="m2 ui simple dropdown huge item">
+                <a class="m2 browse item">
+                    <i class="m2 bars icon"></i>
+                </a>
+                <div class="m2 huge menu">
+                    {% for m in site.menu %}
+                        <a href="{{ m.url }}" class="large item">{{ m.name }}</a>
+                    {% endfor %}
+                </div>
+              </div>
+            </a>
+        </div>
+    </div>
+</div>

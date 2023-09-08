@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="ui text container">
+   <div class="ui segment">
+       <h3 class="ui floated header">{{page.title}}</h3>
+       <div class="ui clearing divider"></div>
+       <div class="ui two column stackable very relaxed grid">
+       <div class="column">
+           <p><i class="calendar icon"></i> {{page.year}} <i class="tag icon"></i> {{page.tags}} </p>
+           <a href="{{page.behance_urk}}">
+               <button class="ui left labeled icon button">
+                   <i class="behance square icon"></i>See project at Behance
+               </button>                  
+           </a>
+           <br/>
+           <p></p>
+           <img class="ui centered large image" src="{{ page.preview_img }}" alt="{{ page.title}} mage">
+       </div>    
+       <div class="column">
+         {{ content }} 
+       </div>
+   </div>
+</div>
