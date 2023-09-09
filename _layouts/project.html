@@ -2,24 +2,47 @@
 layout: default
 ---
 
+{% assign image_files = site.static_files | where_exp: "file", "file.path contains page.filter_img" %}
+{% assign active = "active" %}
+
 <div class="ui text container">
-   <div class="ui segment">
-       <h3 class="ui floated header">{{page.title}}</h3>
-       <div class="ui clearing divider"></div>
-       <div class="ui two column stackable very relaxed grid">
-       <div class="column">
-           <p><i class="calendar icon"></i> {{page.year}} <i class="tag icon"></i> {{page.tags}} </p>
-           <a href="{{page.behance_urk}}">
-               <button class="ui left labeled icon button">
-                   <i class="behance square icon"></i>See project at Behance
-               </button>                  
-           </a>
-           <br/>
-           <p></p>
-           <img class="ui centered large image" src="{{ page.preview_img }}" alt="{{ page.title}} mage">
-       </div>    
-       <div class="column">
-         {{ content }} 
-       </div>
-   </div>
+    <div class="ui segment">
+
+        <h3 class="ui floated header">{{page.title}}</h3>
+        <div class="ui clearing divider"></div>
+
+        <div class="ui secondary  menu">
+            <div class="right menu">
+                <div class="item">
+                    <a href="/projects"><i class="undo icon"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p><i class="calendar icon"></i> {{page.year}} <i class="tag icon"></i> {{page.tags}} </p>
+        <a href="{{page.behance_urk}}" target="_blank">
+            <button class="ui left labeled icon button">
+                <i class="behance square icon"></i>Project at Behance
+            </button>                  
+        </a>
+        <p></p>
+    
+        <div class="ui two column stackable very relaxed grid">
+            <div class="column">
+                <div class="ui shape" onclick="$('.shape').shape('flip right');">
+                    <div class="sides">
+                        {% for myimage in image_files %}
+                            <div class="side {{ active }}">
+                                <img class="ui large image" src="{{ myimage.path }}" alt="Fotografía de Raquel Carmona"i />
+                            </div>
+                            {% assign active = "" %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>    
+            <div class="column fade">
+                {{ content }} 
+            </div>
+        </div>
+    </div>
 </div>

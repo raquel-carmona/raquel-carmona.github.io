@@ -5,7 +5,10 @@ permalink: /projects/hervidero
 year: 2023
 tags: Editorial, Identify
 behance_urk: https://www.behance.net/gallery/171205103/el-hervidero-magazine-Editorial
-preview_img: /images/hervidero/h1.png
+preview_img: /images/hervidero/h1.gif
+filter_img: /images/hervidero/
+short_description: "Quarterly independent publication of artistic research that focuses
+in studying the creation and contemporary culture of the Andalusian scene"
 ---
 
 Publicación independiente trimestral sobre investigación artística que se centra 
@@ -19,7 +22,6 @@ El hervidero trata del sentimiento de pertenencia cultural que ha experimentado
 el territorio andaluz durante las últimas décadas. Sobre temas de concienciación 
 en torno al apoyo del barrio, de pequeños comercios, el interés de descubrir y 
 apoyar arte local y preservar la cultura Andaluza.
-
 
 En este número hablaremos de artistas que toman como inspiración artística sus 
 propias raíces para tratar temas personales e identitarios. Algunos a modo de 

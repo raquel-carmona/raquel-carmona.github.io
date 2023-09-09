@@ -1,0 +1,20 @@
+---
+layout: page
+title: Ejemplo Sides
+permalink: /t2
+---
+
+
+{% assign image_files = site.static_files | where_exp: "file", "file.path contains '/images/hervidero'" %}
+{% assign active = "active" %}
+
+<div class="ui shape" onclick="$('.shape').shape('flip right');">
+    <div class="sides">
+        {% for myimage in image_files %}
+            <div class="side {{ active }}">
+                <img class="ui large image" src="{{ myimage.path }}" alt="Fotografía de Raquel Carmona"i />
+            </div>
+            {% assign active = "" %}
+        {% endfor %}
+    </div>
+</div>

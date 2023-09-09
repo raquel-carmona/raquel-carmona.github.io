@@ -6,6 +6,9 @@ year: 2022
 tags: Editorial
 behance_urk: https://www.behance.net/gallery/165906491/Diseno-Editorial-Articulo"
 preview_img: /images/marcosana/ma1.png
+filter_img: /images/marcosana/
+short_description: "Layout of an article about the life of the poet Fernando Macarro Castillo, better known as Marcos Ana,
+political prisoner during the Franco regime in Spain"
 ---
 
 Layout of an article about the life of the poet Fernando Macarro Castillo, better known as Marcos Ana,

@@ -11,17 +11,19 @@ permalink: /projects
         <div class="content">
             <a class="header" href="{{ p.url }}">{{ p.title }}</a>
             <div class="meta">
+                <i class="calendar icon"></i>
                 <span class="date">{{ p.year }}</span>
+                <i class="tag icon"></i><span class="tag">{{ p.tags }}</span>
             </div>
             <div class="description">
-                [ <i class="tag icon"></i>{{ p.tags }} ]
+                <p>{{ p.short_description }}</p>
             </div>
         </div>
-        <div class="extra content">
+        <div class="ui button">
             <a href="{{ p.url }}">
                 <i class="eye icon"></i>
                 Project details
             </a>
-        </div>
+        </div>      
     </div>
 {% endfor %}

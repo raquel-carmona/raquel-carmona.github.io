@@ -6,6 +6,9 @@ year: 2023
 tags: Indentiy
 behance_urk: https://www.behance.net/gallery/165083099/Museo-Arqueologico-Nacional-Visual-Identity
 preview_img: /images/man/man1.gif
+filter_img: /images/man/
+short_description: "Connection past and present through technology. It starts from the minimal geometric expression of the square (referring to the pixel) 
+to create compositions"
 ---
 
 The National Archaeological Museum (Madrid) is a public institution whose objective is to offer all citizens a rigorous, attractive,
