@@ -2,8 +2,27 @@
 layout: page
 title: About Me
 ---
-<h3 class="ui floated header">Sobre mi</h3>
-<div class="ui clearing divider"></div>
+
+<style>
+    @keyframes fade {
+        0%  {
+            opacity: .2;
+            padding-top: 20px;
+        }
+        100% {
+            opacity: 1;
+            padding-top: 0px;
+        }
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 4s;
+    }
+</style>
+
+<h3 class="ui floated header fade">Sobre mi</h3>
+<div class="ui clearing divider fade"></div>
 <div class="ui two column stackable very relaxed grid">
     <div class="column fade">
         <p>
@@ -21,17 +40,23 @@ title: About Me
             al sector artístico y cultural, con especial interés en el desarrollo de identidades
             visuales, diseño editorial y web.
         </p>
-        <img class="ui centered large image" src="images/sobre_mi_1.png" alt="Fotografía de Raquel Carmona">
+        <div class="fade">
+            <img class="ui centered large image" src="images/sobre_mi_1.png" alt="Fotografía de Raquel Carmona">
+        </div>
         <p><span class="ui small red text">Raquel Carmona, 2023</span></p>
         <p>Nacida en Córdoba - ES. Reside en Granada</p>
     </div>
 </div>
 
-<h3 class="ui floated header">Biografía</h3>
-<div class="ui clearing divider"></div>
+<div class="ui hidden divider"></div>
+
+<h3 class="ui floated header fade">Biografía</h3>
+<div class="ui clearing divider fade"></div>
 <div class="ui two column stackable very relaxed grid">
     <div class="column fade">
-        <img class="ui centered large image" src="images/sobre_mi_2.png" alt="Fotografía de Raquel Carmona">
+        <div class="fade">
+            <img class="ui centered large image" src="images/sobre_mi_2.png" alt="Fotografía de Raquel Carmona">
+        </div>
         <p><span class="ui small red text">Raquel Carmona, 2023</span></p>
     </div>
     <div class="column fade">
@@ -45,14 +70,19 @@ title: About Me
             hora de mezclar lenguajes gráficos, fusionar lo digital con lo manual. Después, tuve claro
             que quería seguir trabajando en el mundo del diseño gráfico.
         </p>
-        <p>Intereses:
-            <li>
-                Dirección de arte, Identidad visual y Branding,
-            </li>
-            Diseño editorial, Diseño web, Artes gráficas, Comisariado, Audiovisuales.
+        <p>Intereses:</p>
+        <p>
+            <i class="tag icon"></i>Dirección de arte, Identidad visual y Branding
+            <i class="tag icon"></i>Diseño editorial
+            <i class="tag icon"></i>Diseño web
+            <i class="tag icon"></i>Artes gráficas
+            <i class="tag icon"></i>Comisariado
+            <i class="tag icon"></i>Audiovisuales
         </p>
     </div>
 </div>
+
+<div class="ui hidden divider"></div>
 
 <h3 class="ui floated header">CV</h3>
 <div class="ui clearing divider"></div>

@@ -22,13 +22,14 @@ $(document)
         $('.shape').shape();
 
         // show dropdown on hover
-        //$('.main.menu  .ui.dropdown').dropdown({
-        //    on: 'hover'
-        //});
-        $('.fade')
-            .transition('fade')
-            .transition('fade', '2000ms')
-        ;
+        $('.main.menu  .ui.dropdown').dropdown({
+            on: 'hover'
+        });
+
+        //$('.fade')
+        //    .transition('fade')
+        //    .transition('fade', '2000ms')
+        //;
 
         setInterval(flip, 3000);
     });
