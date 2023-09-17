@@ -7,14 +7,13 @@ tags: Editorial
 behance_urk: https://www.behance.net/gallery/165906491/Diseno-Editorial-Articulo"
 preview_img: /images/marcosana/ma1.png
 filter_img: /images/marcosana/
-short_description: "Layout of an article about the life of the poet Fernando Macarro Castillo, better known as Marcos Ana,
-political prisoner during the Franco regime in Spain"
+short_description: 
+    "Article on the life of the poet Fernando Macarro Castillo, better known as Marcos Ana, 
+    political prisoner during the Franco regime in Spain."
 ---
 
-Layout of an article about the life of the poet Fernando Macarro Castillo, better known as Marcos Ana,
-political prisoner during the Franco regime in Spain.
+Article on the life of the poet Fernando Macarro Castillo, better known as Marcos Ana, political 
+prisoner during the Franco regime in Spain.
 
-(Article by Javier Rodríguez Godoy)
-
-*Maquetación de artículo sobre la vida del poeta Fernando Macarro Castillo, más conocido como Marcos Ana, preso político durante el Régimen Franquista en España.*
+(Author of the article; Javier Rodríguez Godoy)
 
